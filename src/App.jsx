@@ -104,6 +104,7 @@ function App() {
       <section id="spa" className="spa">
         <h2>C21 Spa</h2>
 
+        {/* Gallery SPA - Grid / Flex */}
         <div className="spa-gallery">
           <img src={spa1} alt="Spa Bawah" />
           <img src={spa2} alt="Spa Refleksi" />
@@ -112,8 +113,9 @@ function App() {
         </div>
 
         <p>
-          Relax and refresh your mind and body in our luxurious spa. From soothing massages
-          to rejuvenating treatments, C21 Spa is your sanctuary for calm and comfort.
+          Relax and refresh your mind and body in our luxurious spa. 
+          From soothing massages to rejuvenating treatments, 
+          C21 Spa is your sanctuary for calm and comfort.
         </p>
 
         <h3>Our Menu</h3>
@@ -152,7 +154,7 @@ function App() {
         <h3>Contact Us</h3>
         <div className="footer-links">
           <a
-            href="https://wa.me/6282310311117"
+            href="https://wa.me/622310311117"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -164,6 +166,13 @@ function App() {
             rel="noopener noreferrer"
           >
             Instagram
+          </a>
+          <a
+            href="https://www.tiktok.com/@c21.spa"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Tiktok
           </a>
           <a
             href="https://share.google/bIy2SBOm2B4ygy7Zo"

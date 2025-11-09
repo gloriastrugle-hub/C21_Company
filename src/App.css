@@ -352,3 +352,16 @@ footer .footer-links a:hover {
     gap: 15px;
   }
 }
+/* ===== style yang sudah ada ===== */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* style-section lain … */
+
+/* ===== tambahkan style slider di paling bawah ===== */
+.swiper-slide img {
+  width: 100%;
+  display: block;
+}
