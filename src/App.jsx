@@ -154,7 +154,7 @@ function App() {
         <h3>Contact Us</h3>
         <div className="footer-links">
           <a
-            href="https://wa.me/622310311117"
+            href="https://wa.me/6282310311117"
             target="_blank"
             rel="noopener noreferrer"
           >
