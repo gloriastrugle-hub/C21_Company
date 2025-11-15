@@ -1,4 +1,7 @@
 import "./App.css";
+import Slider from "./Slider"; // import slider hover-pause terbaru
+
+// Logo & header
 import logo from "./assets/logo.jpg";
 import header from "./assets/header.jpg";
 
@@ -70,7 +73,6 @@ function App() {
           and enjoying delicious coffee and treats all feel just right.
         </p>
 
-        {/* 3 FOTO HOME */}
         <div className="about-gallery">
           <img src={home1} alt="Home 1" />
           <img src={home2} alt="Home 2" />
@@ -82,10 +84,8 @@ function App() {
       <section id="coffee" className="coffee">
         <h2>C21 Coffee</h2>
 
-        <div className="gallery">
-          <img src={kafe1} alt="C21 Café interior" />
-          <img src={kafe2} alt="C21 Café seating area" />
-        </div>
+        {/* Slider hover-pause */}
+        <Slider images={[kafe1, kafe2]} width="100%" maxHeight="400px" />
 
         <p>
           Step into our cozy coffee spot — the perfect place to unwind with
@@ -104,13 +104,8 @@ function App() {
       <section id="spa" className="spa">
         <h2>C21 Spa</h2>
 
-        {/* Gallery SPA - Grid / Flex */}
-        <div className="spa-gallery">
-          <img src={spa1} alt="Spa Bawah" />
-          <img src={spa2} alt="Spa Refleksi" />
-          <img src={spa3} alt="Spa Room Couple" />
-          <img src={spa4} alt="Spa Single Room" />
-        </div>
+        {/* Slider hover-pause */}
+        <Slider images={[spa1, spa2, spa3, spa4]} width="100%" maxHeight="400px" />
 
         <p>
           Relax and refresh your mind and body in our luxurious spa. 
@@ -135,52 +130,20 @@ function App() {
         </p>
 
         <h3>Standar Room Type</h3>
-        <div className="room-gallery">
-          <img src={standar1} alt="Standar Room 1" />
-          <img src={standar2} alt="Standar Room 2" />
-          <img src={standar3} alt="Standar Room 3" />
-        </div>
+        <Slider images={[standar1, standar2, standar3]} width="100%" maxHeight="400px" />
 
         <h3>VIP Room Type</h3>
-        <div className="room-gallery">
-          <img src={VIP1} alt="VIP Room 1" />
-          <img src={VIP2} alt="VIP Room 2" />
-          <img src={VIP3} alt="VIP Room 3" />
-        </div>
+        <Slider images={[VIP1, VIP2, VIP3]} width="100%" maxHeight="400px" />
       </section>
 
       {/* FOOTER / CONTACT */}
       <footer id="contact">
         <h3>Contact Us</h3>
         <div className="footer-links">
-          <a
-            href="https://wa.me/6282310311117"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            WhatsApp
-          </a>
-          <a
-            href="https://www.instagram.com/c21coffeespa"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Instagram
-          </a>
-          <a
-            href="https://www.tiktok.com/@c21.spa"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Tiktok
-          </a>
-          <a
-            href="https://share.google/bIy2SBOm2B4ygy7Zo"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Location
-          </a>
+          <a href="https://wa.me/6282310311117" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+          <a href="https://www.instagram.com/c21coffeespa" target="_blank" rel="noopener noreferrer">Instagram</a>
+          <a href="https://www.tiktok.com/@c21.spa" target="_blank" rel="noopener noreferrer">Tiktok</a>
+          <a href="https://share.google/bIy2SBOm2B4ygy7Zo" target="_blank" rel="noopener noreferrer">Location</a>
         </div>
       </footer>
     </>
